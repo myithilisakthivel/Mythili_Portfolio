@@ -1,0 +1,112 @@
+:root {
+    --primary: #7c3aed; /* Elegant Purple */
+    --secondary: #f5f3ff; /* Light Lavender */
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: skyblue;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.hire-btn {
+    background: var(--primary);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.greeting {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 { font-size: 50px; margin: 10px 0; }
+.tagline { font-size: 20px; color: var(--text-light); margin-bottom: 20px; }
+.bio { max-width: 600px; margin: auto; margin-bottom: 20px; }
+.contact-links { display: flex; justify-content: center; gap: 20px; font-size: 14px; color: var(--text-light); }
+
+/* Cards & Grid */
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.skill-list { list-style: square; color: var(--primary); }
+
+.edu-item { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+/* Experience Timeline */
+.timeline-card {
+    background: var(--secondary);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.work-item { margin-bottom: 20px; }
+.work-item h4 { color: var(--primary); margin-bottom: 5px; }
+
+/* Project Card */
+.project-card {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+}
+
+.label { font-size: 12px; text-transform: uppercase; opacity: 0.8; }
+
+/* Footer */
+.footer {
+    padding: 50px 0;
+    text-align: center;
+    background: #f1f5f9;
+    margin-top: 50px;
+}
