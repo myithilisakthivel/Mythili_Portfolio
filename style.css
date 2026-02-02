@@ -1,0 +1,153 @@
+:root{
+    --primary:#7c3aed;
+    --light:#f5f3ff;
+    --dark:#1e293b;
+    --gray:#64748b;
+    --white:#fff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Plus Jakarta Sans',sans-serif;
+    background:#f8fafc;
+    color:var(--dark);
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* NAVBAR */
+.navbar{
+    background:white;
+    padding:20px 0;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:600;
+}
+
+.hire-btn{
+    background:var(--primary);
+    color:white;
+    padding:8px 18px;
+    border-radius:20px;
+}
+
+/* HERO */
+.hero{
+    padding:80px 0;
+    text-align:center;
+}
+
+.greeting{
+    color:var(--primary);
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.tagline{
+    color:var(--gray);
+    margin:10px 0;
+}
+
+.bio{
+    max-width:600px;
+    margin:15px auto;
+    color:var(--gray);
+}
+
+.contact{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    font-size:14px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.card ul li{
+    margin-left:20px;
+    color:var(--gray);
+}
+
+/* SECTIONS */
+.section{
+    margin-top:60px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* PROJECT */
+.project{
+    background:var(--primary);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+/* FOOTER */
+.footer{
+    margin-top:60px;
+    padding:40px 0;
+    background:#f1f5f9;
+    text-align:center;
+    color:var(--gray);
+}
+
+/* SPACING */
+.mt{
+    margin-top:20px;
+}
