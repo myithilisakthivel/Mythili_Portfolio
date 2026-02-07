@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Mythili S | Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Mythili S | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
     <div class="container nav-flex">
         <h2 class="logo"></h2>
@@ -19,13 +17,12 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="mailto:myithilisakthivel@gmail.com" class="hire-btn">Contact</a></li>
+            <li><a href="#contact" class="hire-btn">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
+<section class="hero" id="about">
     <div class="container hero-flex">
         <div class="hero-text">
             <span class="greeting">Hello, I'm</span>
@@ -42,10 +39,9 @@
     </div>
 </section>
 
-<!-- CONTENT -->
 <main class="container">
 
-<section class="grid">
+<section id="skills" class="grid">
     <div class="card">
         <h3>Programming Skills</h3>
         <ul>
@@ -55,7 +51,6 @@
             <li>HTML</li>
             <li>CSS</li>
         </ul>
-
         <h3 class="mt">Languages</h3>
         <p>English, Tamil</p>
     </div>
@@ -63,13 +58,12 @@
     <div class="card">
         <h3>Education</h3>
         <p><strong>V.S.B Engineering College</strong><br>B.E ECE – CGPA 8.32<br><small>2020 – 2024</small></p>
-        <p><strong>Star Matric Higher Secondary School</strong><br>12th – 75% | 10th – 88%</p>
+        <p><strong>Star Matric Higher Secondary</strong><br>12th – 75% | 10th – 88%</p>
     </div>
 </section>
 
 <section id="experience" class="section">
     <h2>Experience & Internship</h2>
-
     <div class="card">
         <h4>Telecaller – 1 Year</h4>
         <p>Instruments Calibration and Test Center</p>
@@ -87,6 +81,55 @@
     </div>
 </section>
 
+<section id="contact" class="section">
+    <div class="form-container">
+        <div class="form-card">
+            <div class="form-header">
+                <h2>Let's Code Your <span>Vision</span></h2>
+                <p>Fill out the form below to get in touch!</p>
+            </div>
+            
+            <form class="mythili-form">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter Last Name" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Date of Birth</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="10-digit number" required pattern="[0-9]{10}">
+                </div>
+
+                <div class="input-group">
+                    <label>Your Message</label>
+                    <textarea rows="4" placeholder="How can I help you?" required></textarea>
+                </div>
+
+                <div class="form-btns">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
 </main>
 
 <footer class="footer">
@@ -96,6 +139,3 @@
 
 </body>
 </html>
-
-
-
