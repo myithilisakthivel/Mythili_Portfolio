@@ -1,142 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mythili S | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mythili S | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<header>
 <nav class="navbar">
-    <div class="container nav-flex">
-        <h2 class="logo"></h2>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact" class="hire-btn">Contact</a></li>
-        </ul>
-    </div>
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</label>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
+</header>
 
-<section class="hero" id="about">
-    <div class="container hero-flex">
-        <div class="hero-text">
-            <span class="greeting">Hello, I'm</span>
-            <h1>Mythili S</h1>
-            <p class="tagline">ECE Graduate | Blockchain Enthusiast | Robotics Intern</p>
-            <p class="bio">
-                Highly motivated individual seeking a responsible role to gain practical experience and contribute effectively to organizational goals.
-            </p>
-            <div class="contact">
-                <span>📍 Karur, Tamil Nadu</span>
-                <span>📞 8838562332</span>
-            </div>
-        </div>
-    </div>
+<main>
+
+<section id="about" class="hero">
+<div class="container hero-flex">
+
+<div class="hero-image">
+<div class="image-wrapper">
+<img src="Mythili_Image.png" alt="Mythili S" class="profile-img">
+</div>
+</div>
+
+<div class="hero-content">
+<span class="badge">MERN Stack Developer  |  Blockchain Enthusiast</span>
+<h1>Mythili S</h1>
+<p class="subtitle">ECE Graduate | Robotics Intern</p>
+<p class="about-text">
+Passionate developer focused on building scalable and user-centric applications.
+Strong foundation in embedded systems and full-stack technologies.
+Committed to continuous learning and delivering impactful real-world solutions.
+</p>
+
+<div class="hero-btns">
+<a href="https://www.linkedin.com/in/mythili-sakthivel-4b33a43b1/" class="btn btn-primary" target="_blank">LinkedIn</a>
+<a href="#contact" class="btn btn-outline">Hire Me</a>
+</div>
+</div>
+
+</div>
 </section>
 
-<main class="container">
+<section id="experience" class="section gray-bg">
+<div class="container">
+<h2 class="section-title">Experience & Internship</h2>
 
-<section id="skills" class="grid">
-    <div class="card">
-        <h3>Programming Skills</h3>
-        <ul>
-            <li>C</li>
-            <li>Python</li>
-            <li>Communication Networks</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-        <h3 class="mt">Languages</h3>
-        <p>English, Tamil</p>
-    </div>
+<div class="card-grid">
+<article class="card">
+<h3>Customer Support Associate</h3>
+<p>
+Provided structured technical assistance and resolved system-level issues efficiently.
+Improved satisfaction metrics through proactive troubleshooting and communication.
+Maintained high response accuracy under time-sensitive scenarios.
+</p>
+</article>
 
-    <div class="card">
-        <h3>Education</h3>
-        <p><strong>V.S.B Engineering College</strong><br>B.E ECE – CGPA 8.32<br><small>2020 – 2024</small></p>
-        <p><strong>Star Matric Higher Secondary</strong><br>12th – 75% | 10th – 88%</p>
-    </div>
+<article class="card">
+<h3>Robotics Internship</h3>
+<p>
+Worked on industrial robot configuration and automation simulations.
+Assisted in PLC integration and sensor-driven workflows.
+Enhanced operational precision through calibration testing.
+</p>
+</article>
+</div>
+</div>
 </section>
 
-<section id="experience" class="section">
-    <h2>Experience & Internship</h2>
-    <div class="card">
-        <h4>Telecaller – 1 Year</h4>
-        <p>Instruments Calibration and Test Center</p>
-        <p>Handled customer communication and service coordination.</p>
+<section id="projects" class="section">
+<div class="container">
+<h2 class="section-title">Projects</h2>
 
-        <h4 class="mt">Robotics Internship</h4>
-        <p>Learned robot configuration, manipulators and simulation.</p>
-    </div>
+<div class="card-grid">
+<article class="card project-card">
+<h3>Smart Energy Monitoring System</h3>
+<p>
+Developed IoT-based monitoring system using Arduino and current sensors.
+Integrated cloud dashboard for real-time analytics.
+Implemented abnormal usage alerts.
+Reduced measurement error by calibration optimization.
+</p>
+</article>
+
+<article class="card project-card">
+<h3>Autonomous Line Follower Robot</h3>
+<p>
+Built microcontroller-based robot using IR path tracking.
+Designed motor control logic for directional stability.
+Integrated ultrasonic obstacle detection.
+Implemented PID-based navigation correction.
+</p>
+</article>
+</div>
+</div>
 </section>
 
-<section class="section">
-    <div class="project">
-        <h3>Blockchain Based Merchant Payment System</h3>
-        <p>A decentralized system that processes and verifies transactions using blockchain technology.</p>
-    </div>
+<section id="skills" class="section gray-bg">
+<div class="container">
+<h2 class="section-title">Technical Stack</h2>
+
+<div class="skills-grid">
+<div class="skill-item"><div class="skill-icon">🌐</div><div>HTML</div></div>
+<div class="skill-item"><div class="skill-icon">🎨</div><div>CSS</div></div>
+<div class="skill-item"><div class="skill-icon">⚡</div><div>JavaScript</div></div>
+<div class="skill-item"><div class="skill-icon">⚛</div><div>React</div></div>
+<div class="skill-item"><div class="skill-icon">🟢</div><div>Node</div></div>
+<div class="skill-item"><div class="skill-icon">🚂</div><div>Express</div></div>
+<div class="skill-item"><div class="skill-icon">🍃</div><div>MongoDB</div></div>
+<div class="skill-item"><div class="skill-icon">🅱</div><div>Bootstrap</div></div>
+<div class="skill-item"><div class="skill-icon">💻</div><div>C</div></div>
+<div class="skill-item"><div class="skill-icon">🖥</div><div>C++</div></div>
+<div class="skill-item"><div class="skill-icon">☕</div><div>Java</div></div>
+<div class="skill-item"><div class="skill-icon">📊</div><div>Data Structures</div></div>
+<div class="skill-item"><div class="skill-icon">🧠</div><div>Algorithms</div></div>
+</div>
+
+</div>
 </section>
 
-<section id="contact" class="section">
-    <div class="form-container">
-        <div class="form-card">
-            <div class="form-header">
-                <h2>Let's Code Your <span>Vision</span></h2>
-                <p>Fill out the form below to get in touch!</p>
-            </div>
-            
-            <form class="mythili-form">
-                <div class="form-row">
-                    <div class="input-group">
-                        <label>First Name</label>
-                        <input type="text" placeholder="Enter First Name" required>
-                    </div>
-                    <div class="input-group">
-                        <label>Last Name</label>
-                        <input type="text" placeholder="Enter Last Name" required>
-                    </div>
-                </div>
+<section id="education" class="section">
+<div class="container">
+<h2 class="section-title">Education</h2>
 
-                <div class="input-group">
-                    <label>Date of Birth</label>
-                    <input type="date" required>
-                </div>
+<article class="education-card">
+<h3>B.E Electronics and Communication Engineering</h3>
+<p>V.S.B Engineering College</p>
+<p>2020 – 2024</p>
+</article>
 
-                <div class="input-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="example@gmail.com" required>
-                </div>
+</div>
+</section>
 
-                <div class="input-group">
-                    <label>Mobile Number</label>
-                    <input type="tel" placeholder="10-digit number" required pattern="[0-9]{10}">
-                </div>
+<section id="contact" class="section gray-bg">
+<div class="container">
+<h2 class="section-title">Contact Me</h2>
 
-                <div class="input-group">
-                    <label>Your Message</label>
-                    <textarea rows="4" placeholder="How can I help you?" required></textarea>
-                </div>
+<form class="contact-form">
 
-                <div class="form-btns">
-                    <button type="submit" class="submit-btn">Submit</button>
-                    <button type="reset" class="reset-btn">Reset</button>
-                </div>
-            </form>
-        </div>
-    </div>
+<div class="input-row">
+<div class="input-group">
+<label>First Name</label>
+<input type="text" required placeholder="Enter First Name">
+</div>
+
+<div class="input-group">
+<label>Last Name</label>
+<input type="text" required placeholder="Enter Last Name">
+</div>
+</div>
+
+<div class="input-group">
+<label>Date of Birth</label>
+<input type="date" required placeholder="">
+</div>
+
+<div class="input-group">
+  <label for="email">Email Address</label>
+  <input type="email" id="email" required placeholder="example@gmail.com">
+</div> 
+
+<div class="input-group">
+<label>Mobile Number</label>
+<input type="tel" required placeholder="10-digit number">
+</div>
+
+<div class="input-group">
+<label>Your Message</label>
+<textarea rows="4" required placeholder="How can I help you?"></textarea>
+</div>
+
+<div class="btn-group">
+<button type="submit" class="btn-submit">Submit</button>
+<button type="reset" class="btn-reset">Reset</button>
+</div>
+
+</form>
+
+</div>
 </section>
 
 </main>
-
-<footer class="footer">
-    <p>Email: myithilisakthivel@gmail.com</p>
-    <p>© 2026 Mythili S</p>
+<footer>
+<p>© 2026 Mythili S</p>
 </footer>
+
 
 </body>
 </html>
-
